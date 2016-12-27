@@ -113,7 +113,7 @@ int cpu_medium()
                     j = rand() % 11;
                 }
                 board[j] = c_piece;
-                j = k;
+                k = j;
                 place++;
             }
             if ((check_win(board, k)))
