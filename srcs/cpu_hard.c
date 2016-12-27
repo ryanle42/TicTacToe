@@ -128,22 +128,28 @@ int     cpu_hard()
                 while (!(random >= 1 && random <= 4))
                     random = rand() % 4;
                 if (random == 1)
-                    if (is_safe(board, 1))
+				{
+				 	if (is_safe(board, 1))
                         j = 1;
                     else
                         random++;
+				}
                 if (random == 2)
+				{
                     if (is_safe(board, 5))
                         j = 5;
                     else
                         random++;
+				}
                 if  (random == 3)
-                    if (is_safe(board, 7))
+				{
+				 	if (is_safe(board, 7))
                         j = 7;
                     else
                         random++;
-                if (random == 4)
-                    if (is_safe(board, 9))
+				}
+				if (random == 4)
+				 	if (is_safe(board, 9))
                         j = 9;
                 if (is_safe(board, j))
                 {
@@ -152,19 +158,6 @@ int     cpu_hard()
                     place++;
                 }
             }
-            // Go for middle
-            /*
-            if (!place && turn > 1)
-            {
-                if (is_safe(board, 5) && !(pos == 0 || pos == 2 || pos == 8 || pos == 10))
-                {
-                    j = 5;
-                    board[j] = c_piece;
-                    k = j;
-                    place++;
-                }
-            }*/
-            // Go for corners
             if (!place)
             {
                 if (is_safe(board, 10))
@@ -182,17 +175,6 @@ int     cpu_hard()
                     place++;
                 }
             }
-            /*if (!place && turn > 1)
-            {
-                j = turn_one(pos);
-                if (is_safe(board, j))
-                {
-                    board[j] = c_piece;
-                    k = j;
-                    place++;
-                }
-            }*/
-            // rando pos
             if (!place)
             {
                 while (!(is_safe(board, j)))
