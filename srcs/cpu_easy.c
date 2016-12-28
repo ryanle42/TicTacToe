@@ -11,6 +11,8 @@ int cpu_easy()
 
     srand (time(NULL));
     board = make_board();
+    new_line();
+    printf("CPU Easy\n");
     p_piece = choose_piece();
     if (p_piece == 'x' || p_piece == 'X')
     {

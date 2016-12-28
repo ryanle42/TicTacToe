@@ -12,9 +12,46 @@ void print_board(char *board)
             copy[i] = ' ';
         i++;
     }
-    printf(" %c | %c | %c \n", copy[0], copy[1], copy[2]);
-    printf("-----------\n");
-    printf(" %c | %c | %c \n", copy[4], copy[5], copy[6]);
-    printf("-----------\n");
-    printf(" %c | %c | %c \n\n", copy[8], copy[9], copy[10]);
+	i = 0;
+	while (i < 3)
+	{
+		if (copy[i] == 'X')
+			printf(ANSI_COLOR_RED " %c " ANSI_COLOR_RESET, copy[i]);
+		if (copy[i] == 'O')
+			printf(ANSI_COLOR_YELLOW " %c " ANSI_COLOR_RESET, copy[i]);
+        if (copy[i] == ' ')
+			printf(" %c ", copy[i]);
+		if (i < 2)
+			printf("|");
+        i++;
+	}
+    i++;
+	printf("\n-----------\n");
+    while (i < 7)
+    {
+        if (copy[i] == 'X')
+            printf(ANSI_COLOR_RED " %c " ANSI_COLOR_RESET, copy[i]);
+        if (copy[i] == 'O')
+            printf(ANSI_COLOR_YELLOW " %c " ANSI_COLOR_RESET, copy[i]);
+        if (copy[i] == ' ')
+            printf(" %c ", copy[i]);
+        if (i < 6)
+            printf("|");
+        i++;
+    }
+    i++;
+    printf("\n-----------\n");
+    while (i < 11)
+    {
+        if (copy[i] == 'X')
+            printf(ANSI_COLOR_RED " %c " ANSI_COLOR_RESET, copy[i]);
+        if (copy[i] == 'O')
+            printf(ANSI_COLOR_YELLOW " %c " ANSI_COLOR_RESET, copy[i]);
+        if (copy[i] == ' ')
+            printf(" %c ", copy[i]);
+        if (i < 10)
+            printf("|");
+        i++;
+    }
+    printf("\n\n");
 }

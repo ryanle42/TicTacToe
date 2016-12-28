@@ -12,6 +12,8 @@ int pvp()
 
     guide = "123\n456\n789\n";
     board = make_board();
+    new_line();
+    printf("PvP\n");
     p_piece = choose_piece();
     if (p_piece == 'x' || p_piece == 'X')
     {

@@ -13,6 +13,8 @@ int     cpu_hard()
 
     srand (time(NULL));
     board = make_board();
+    new_line();
+    printf("CPU Hard\n");
     p_piece = choose_piece();
     if (p_piece == 'x' || p_piece == 'X')
     {
