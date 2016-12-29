@@ -1,7 +1,8 @@
 # TicTacToe
-Small personal project
 
-./tictactoe in terminal to run program.
+The purpose of this project to gauge how much I've learned from a month at 42. I'm pretty happy with the result. By working on this project I could see a lot the things I need to work on - sloppy code, line count, and algorithms.
+
+Run "make" in terminal and "./tictactoe" to run program
 
 Features 4 modes:
 
