@@ -13,6 +13,8 @@ int cpu_medium()
     srand (time(NULL));
     guide = "123\n456\n789\n";
     board = make_board();
+    new_line();
+    printf("CPU Medium\n");
     p_piece = choose_piece();
     if (p_piece == 'x' || p_piece == 'X')
     {
