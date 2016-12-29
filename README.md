@@ -15,5 +15,5 @@ Features 4 modes:
   - Also makes random moves but goes for the win or block if it exists.
   
 4. Cpu hard
-  -Super hard coded by move. Has little to no variation based on how you start.
-  -Currently has one way to beat it as far as I know. ~Too lazy to patch up.
+  - Super hard coded by move. Little to no variation in gameplay.
+  - Currently has one way to beat it as far as I know.
