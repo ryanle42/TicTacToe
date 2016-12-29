@@ -1,5 +1,5 @@
 # TicTacToe
-Personal project for fun.
+Small personal project
 
 ./tictactoe in terminal to run program.
 
